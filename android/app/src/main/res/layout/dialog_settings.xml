@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/screen_margin">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/settings_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardBackgroundColor="@color/transparent_surface"
+        app:cardCornerRadius="@dimen/corner_xlarge"
+        app:cardElevation="@dimen/elevation_dialog"
+        app:strokeWidth="0dp">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/settings_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_surface"
+            android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dialog_margin">
+
+            <TextView
+                android:id="@+id/settings_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/settings_title"
+                android:textAppearance="@style/TextAppearance.App.Headline"
+                android:textSize="@dimen/text_cta_small" />
+
+            <View
+                android:id="@+id/settings_divider"
+                style="@style/Widget.App.Divider.Gold"
+                android:layout_width="@dimen/divider_width"
+                android:layout_height="@dimen/divider_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/gutter" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/settings_row_height"
+                android:layout_marginTop="@dimen/gutter_small"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/settings_sound"
+                    android:textAppearance="@style/TextAppearance.App.Title"
+                    android:textSize="@dimen/text_row" />
+
+                <com.google.android.material.materialswitch.MaterialSwitch
+                    android:id="@+id/settings_sound_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/touch_target"
+                    android:contentDescription="@string/settings_sound" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/settings_row_height"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/settings_haptics"
+                    android:textAppearance="@style/TextAppearance.App.Title"
+                    android:textSize="@dimen/text_row" />
+
+                <com.google.android.material.materialswitch.MaterialSwitch
+                    android:id="@+id/settings_haptics_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/touch_target"
+                    android:contentDescription="@string/settings_haptics" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/settings_row_height"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/settings_reduced_motion"
+                    android:textAppearance="@style/TextAppearance.App.Title"
+                    android:textSize="@dimen/text_row" />
+
+                <com.google.android.material.materialswitch.MaterialSwitch
+                    android:id="@+id/settings_motion_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/touch_target"
+                    android:contentDescription="@string/settings_reduced_motion" />
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/settings_reset_button"
+                style="@style/Widget.App.Button.Danger"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height_secondary"
+                android:layout_marginTop="@dimen/gutter"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="@string/settings_reset" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/settings_close_button"
+                style="@style/Widget.App.Button.Secondary"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height_secondary"
+                android:layout_marginTop="@dimen/gutter_small"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="@string/action_close" />
+
+        </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

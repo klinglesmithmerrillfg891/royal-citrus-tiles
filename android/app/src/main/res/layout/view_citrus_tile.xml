@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/tile_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="1dp"
+        app:cardBackgroundColor="@color/tile_orange"
+        app:cardCornerRadius="@dimen/corner_small"
+        app:cardElevation="@dimen/elevation_tile"
+        app:strokeColor="@color/hairline_bark"
+        app:strokeWidth="@dimen/stroke_hairline">
+
+        <FrameLayout
+            android:id="@+id/tile_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/tile_bg_orange">
+
+            <ImageView
+                android:id="@+id/tile_sprite"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sprite_tile_orange" />
+
+            <ImageView
+                android:id="@+id/tile_crown_badge"
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:layout_gravity="top|end"
+                android:alpha="0.75"
+                android:importantForAccessibility="no"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_crown_mark"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/tile_select_overlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/tile_selected_overlay"
+                android:importantForAccessibility="no"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/tile_burst"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/burst_citrus"
+                android:importantForAccessibility="no"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</merge>

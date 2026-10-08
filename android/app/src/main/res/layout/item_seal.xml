@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/seal_item_root"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/seal_grid_cell"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/gutter_tiny">
+
+    <ImageView
+        android:id="@+id/seal_item_sprite"
+        android:layout_width="@dimen/seal_grid_sprite"
+        android:layout_height="@dimen/seal_grid_sprite"
+        android:importantForAccessibility="no"
+        android:scaleType="fitCenter"
+        android:src="@drawable/sprite_royal_seal" />
+
+    <TextView
+        android:id="@+id/seal_item_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="@string/wing_state_locked"
+        android:textAppearance="@style/TextAppearance.App.Label"
+        android:textSize="@dimen/text_micro" />
+
+</LinearLayout>

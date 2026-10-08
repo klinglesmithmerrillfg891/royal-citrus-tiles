@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/screen_margin">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/seals_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardBackgroundColor="@color/transparent_surface"
+        app:cardCornerRadius="@dimen/corner_xlarge"
+        app:cardElevation="@dimen/elevation_dialog"
+        app:strokeWidth="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_surface"
+            android:orientation="vertical"
+            android:padding="@dimen/dialog_margin">
+
+            <TextView
+                android:id="@+id/seals_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/seals_title"
+                android:textAppearance="@style/TextAppearance.App.Headline"
+                android:textSize="@dimen/text_cta_small" />
+
+            <View
+                android:id="@+id/seals_divider"
+                style="@style/Widget.App.Divider.Gold"
+                android:layout_width="@dimen/divider_width"
+                android:layout_height="@dimen/divider_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/gutter" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/seals_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gutter"
+                android:maxHeight="@dimen/seal_grid_max_height"
+                android:overScrollMode="never" />
+
+            <LinearLayout
+                android:id="@+id/seals_empty_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gutter"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/seals_empty_icon"
+                    android:layout_width="@dimen/icon_decor"
+                    android:layout_height="@dimen/icon_decor"
+                    android:alpha="0.35"
+                    android:importantForAccessibility="no"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_seal" />
+
+                <TextView
+                    android:id="@+id/seals_empty_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/gutter"
+                    android:gravity="center"
+                    android:text="@string/seals_empty"
+                    android:textAppearance="@style/TextAppearance.App.Body"
+                    android:textSize="@dimen/text_body_small" />
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/seals_close_button"
+                style="@style/Widget.App.Button.Secondary"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height_secondary"
+                android:layout_marginTop="@dimen/dialog_margin"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="@string/action_close" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

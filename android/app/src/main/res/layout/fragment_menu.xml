@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/citrus_cream">
+
+    <ImageView
+        android:id="@+id/menu_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/menu_scrim"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/scrim_menu"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/menu_grain"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/texture_paper"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/menu_foliage_top"
+        android:layout_width="@dimen/icon_decor"
+        android:layout_height="@dimen/icon_decor"
+        android:alpha="0.18"
+        android:importantForAccessibility="no"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_foliage_corner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/menu_foliage_bottom"
+        android:layout_width="@dimen/icon_decor"
+        android:layout_height="@dimen/icon_decor"
+        android:alpha="0.18"
+        android:importantForAccessibility="no"
+        android:rotation="180"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_foliage_corner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/menu_title"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/menu_header_height"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginTop="@dimen/header_padding_top"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:text="@string/menu_title"
+        android:textAppearance="@style/TextAppearance.App.Headline"
+        app:layout_constraintEnd_toStartOf="@id/menu_seals_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/menu_seals_button"
+        style="@style/Widget.App.Button.Icon"
+        android:layout_width="@dimen/touch_target"
+        android:layout_height="@dimen/touch_target"
+        android:layout_marginEnd="@dimen/gutter_small"
+        android:contentDescription="@string/desc_seal_collection"
+        app:icon="@drawable/ic_seal"
+        app:layout_constraintBottom_toBottomOf="@id/menu_title"
+        app:layout_constraintEnd_toStartOf="@id/menu_settings_button"
+        app:layout_constraintTop_toTopOf="@id/menu_title" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/menu_settings_button"
+        style="@style/Widget.App.Button.Icon"
+        android:layout_width="@dimen/touch_target"
+        android:layout_height="@dimen/touch_target"
+        android:layout_marginEnd="@dimen/screen_margin"
+        android:contentDescription="@string/desc_settings"
+        app:icon="@drawable/ic_settings"
+        app:layout_constraintBottom_toBottomOf="@id/menu_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/menu_title" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/menu_favour_tile"
+        style="@style/Widget.App.Card"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/favour_tile_height"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginTop="@dimen/gutter"
+        android:layout_marginEnd="@dimen/screen_margin"
+        app:cardBackgroundColor="@color/surface_paper"
+        app:cardElevation="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_title"
+        app:strokeColor="@color/hairline_gold_soft">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/gutter"
+            android:paddingEnd="@dimen/gutter">
+
+            <com.royalcitrustiles.puzzle.core.ui.StatCardView
+                android:id="@+id/menu_stat_favour"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <View
+                android:id="@+id/menu_favour_divider"
+                android:layout_width="@dimen/divider_height"
+                android:layout_height="40dp"
+                android:background="@color/hairline_bark"
+                android:importantForAccessibility="no" />
+
+            <com.royalcitrustiles.puzzle.core.ui.StatCardView
+                android:id="@+id/menu_stat_wings"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/menu_wings_recycler"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/wing_row_height"
+        android:layout_marginTop="@dimen/gutter"
+        android:clipToPadding="false"
+        android:paddingStart="@dimen/screen_margin"
+        android:paddingEnd="@dimen/screen_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_favour_tile" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/menu_order_card"
+        style="@style/Widget.App.Card.Sunk"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/order_card_height"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginTop="@dimen/gutter"
+        android:layout_marginEnd="@dimen/screen_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_wings_recycler">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/gutter"
+            android:paddingTop="@dimen/gutter_small"
+            android:paddingEnd="@dimen/gutter"
+            android:paddingBottom="@dimen/gutter_small">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/menu_order_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/menu_order_title"
+                    android:textAppearance="@style/TextAppearance.App.Label" />
+
+                <TextView
+                    android:id="@+id/menu_order_moves"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pill_moves"
+                    android:paddingStart="@dimen/gutter_small"
+                    android:paddingTop="2dp"
+                    android:paddingEnd="@dimen/gutter_small"
+                    android:paddingBottom="2dp"
+                    android:text="@string/stat_placeholder_value"
+                    android:textAppearance="@style/TextAppearance.App.Label"
+                    android:textColor="@color/citrus_orange_dark" />
+
+            </LinearLayout>
+
+            <com.royalcitrustiles.puzzle.core.ui.OrderProgressView
+                android:id="@+id/menu_order_progress"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/gutter_tiny"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/menu_hint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginEnd="@dimen/screen_margin"
+        android:layout_marginBottom="@dimen/gutter_small"
+        android:gravity="center"
+        android:text="@string/menu_hint"
+        android:textAppearance="@style/TextAppearance.App.Body"
+        android:textSize="@dimen/text_caption"
+        app:layout_constraintBottom_toTopOf="@id/menu_play_wrapper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/menu_play_wrapper"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/play_tile_height"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginEnd="@dimen/screen_margin"
+        android:layout_marginBottom="@dimen/dialog_margin"
+        app:cardBackgroundColor="@color/transparent_surface"
+        app:cardCornerRadius="@dimen/corner_xlarge"
+        app:cardElevation="@dimen/elevation_cta"
+        app:layout_constraintBottom_toTopOf="@id/menu_footer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_goneMarginBottom="88dp"
+        app:strokeWidth="0dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/menu_play_button"
+            style="@style/Widget.App.Button.Cta"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/menu_play"
+            app:icon="@drawable/ic_crown_mark" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/menu_footer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginEnd="@dimen/screen_margin"
+        android:layout_marginBottom="@dimen/bottom_safe_margin"
+        android:gravity="center"
+        android:text="@string/stat_placeholder_label"
+        android:textAppearance="@style/TextAppearance.App.Label"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

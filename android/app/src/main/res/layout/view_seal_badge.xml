@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View
+        android:id="@+id/seal_ring"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ring_gold"
+        android:importantForAccessibility="no" />
+
+    <ImageView
+        android:id="@+id/seal_sprite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/screen_margin"
+        android:contentDescription="@string/desc_hero_seal"
+        android:scaleType="fitCenter"
+        android:src="@drawable/sprite_royal_seal" />
+
+    <ImageView
+        android:id="@+id/seal_locked_mark"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:layout_gravity="bottom|center_horizontal"
+        android:alpha="0.6"
+        android:importantForAccessibility="no"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_seal"
+        android:visibility="gone" />
+
+</merge>

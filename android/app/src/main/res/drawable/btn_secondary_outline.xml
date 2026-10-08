@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/hairline_leaf">
+    <item>
+        <selector>
+            <item android:state_enabled="false">
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/corner_medium" />
+                    <solid android:color="#14558B2F" />
+                    <stroke
+                        android:width="@dimen/stroke_hairline"
+                        android:color="#55558B2F" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/corner_medium" />
+                    <gradient
+                        android:angle="270"
+                        android:startColor="#1AFFFFFF"
+                        android:endColor="#14558B2F"
+                        android:type="linear" />
+                    <stroke
+                        android:width="@dimen/stroke_frame"
+                        android:color="@color/leaf_green" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+</ripple>

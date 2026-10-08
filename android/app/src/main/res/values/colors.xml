@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="citrus_cream">#FFF8E1</color>
+    <color name="conservatory_night">#102418</color>
+    <color name="conservatory_moss">#1F4429</color>
+    <color name="surface_paper">#FBEFD2</color>
+    <color name="surface_board">#F7E9C9</color>
+    <color name="surface_sunk">#F3E2BC</color>
+    <color name="surface_night">#1A3326</color>
+    <color name="citrus_orange">#E8891C</color>
+    <color name="citrus_orange_light">#F2A33C</color>
+    <color name="citrus_orange_dark">#C06A0E</color>
+    <color name="leaf_green">#558B2F</color>
+    <color name="leaf_green_dark">#33601B</color>
+    <color name="royal_gold">#D4AF37</color>
+    <color name="royal_gold_light">#F0D98A</color>
+    <color name="text_bark">#283618</color>
+    <color name="text_sage">#5E6B4A</color>
+    <color name="text_parchment">#F6EFD9</color>
+    <color name="text_muted">#8A8F7A</color>
+    <color name="text_lichen">#A9B99A</color>
+    <color name="seville_red">#C0392B</color>
+
+    <color name="tile_orange">#FBD9A8</color>
+    <color name="tile_lemon">#F7EFAF</color>
+    <color name="tile_lime">#D8E9B4</color>
+    <color name="tile_grapefruit">#F6C9BE</color>
+    <color name="tile_mandarin">#FBCF9B</color>
+    <color name="tile_crown">#F0D98A</color>
+
+    <color name="hairline_bark">#33283618</color>
+    <color name="hairline_gold">#55D4AF37</color>
+    <color name="hairline_gold_soft">#33D4AF37</color>
+    <color name="hairline_leaf">#4D558B2F</color>
+    <color name="ripple_citrus">#33E8891C</color>
+    <color name="ripple_light">#66FFFFFF</color>
+    <color name="track_parchment">#33F6EFD9</color>
+    <color name="scrim_dim">#99102418</color>
+    <color name="transparent_surface">#00000000</color>
+    <color name="paper_grain">#08283618</color>
+</resources>

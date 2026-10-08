@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/requirement_one"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/chip_requirement"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/gutter_small"
+        android:paddingEnd="@dimen/gutter_small">
+
+        <ImageView
+            android:id="@+id/requirement_one_sprite"
+            android:layout_width="@dimen/requirement_sprite"
+            android:layout_height="@dimen/requirement_sprite"
+            android:importantForAccessibility="no"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sprite_tile_orange" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/gutter_small"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/requirement_one_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/stat_placeholder_value"
+                android:textAppearance="@style/TextAppearance.App.Numeric"
+                android:textSize="@dimen/text_body_small" />
+
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/requirement_one_bar"
+                android:layout_width="@dimen/requirement_bar_width"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                app:indicatorColor="@color/citrus_orange"
+                app:trackColor="@color/hairline_bark"
+                app:trackCornerRadius="2dp"
+                app:trackThickness="@dimen/requirement_bar_thickness" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/requirement_one_check"
+            android:layout_width="@dimen/requirement_sprite_small"
+            android:layout_height="@dimen/requirement_sprite_small"
+            android:importantForAccessibility="no"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_check_leaf"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/requirement_two"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/gutter_small"
+        android:layout_weight="1"
+        android:background="@drawable/chip_requirement"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/gutter_small"
+        android:paddingEnd="@dimen/gutter_small">
+
+        <ImageView
+            android:id="@+id/requirement_two_sprite"
+            android:layout_width="@dimen/requirement_sprite"
+            android:layout_height="@dimen/requirement_sprite"
+            android:importantForAccessibility="no"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sprite_tile_lemon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/gutter_small"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/requirement_two_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/stat_placeholder_value"
+                android:textAppearance="@style/TextAppearance.App.Numeric"
+                android:textSize="@dimen/text_body_small" />
+
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/requirement_two_bar"
+                android:layout_width="@dimen/requirement_bar_width"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                app:indicatorColor="@color/citrus_orange"
+                app:trackColor="@color/hairline_bark"
+                app:trackCornerRadius="2dp"
+                app:trackThickness="@dimen/requirement_bar_thickness" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/requirement_two_check"
+            android:layout_width="@dimen/requirement_sprite_small"
+            android:layout_height="@dimen/requirement_sprite_small"
+            android:importantForAccessibility="no"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_check_leaf"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/requirement_three"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/gutter_small"
+        android:layout_weight="1"
+        android:background="@drawable/chip_requirement"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/gutter_small"
+        android:paddingEnd="@dimen/gutter_small">
+
+        <ImageView
+            android:id="@+id/requirement_three_sprite"
+            android:layout_width="@dimen/requirement_sprite"
+            android:layout_height="@dimen/requirement_sprite"
+            android:importantForAccessibility="no"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sprite_tile_lime" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/gutter_small"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/requirement_three_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/stat_placeholder_value"
+                android:textAppearance="@style/TextAppearance.App.Numeric"
+                android:textSize="@dimen/text_body_small" />
+
+            <com.google.android.material.progressindicator.LinearProgressIndicator
+                android:id="@+id/requirement_three_bar"
+                android:layout_width="@dimen/requirement_bar_width"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                app:indicatorColor="@color/citrus_orange"
+                app:trackColor="@color/hairline_bark"
+                app:trackCornerRadius="2dp"
+                app:trackThickness="@dimen/requirement_bar_thickness" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/requirement_three_check"
+            android:layout_width="@dimen/requirement_sprite_small"
+            android:layout_height="@dimen/requirement_sprite_small"
+            android:importantForAccessibility="no"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_check_leaf"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</merge>

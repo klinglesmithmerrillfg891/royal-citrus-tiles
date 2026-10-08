@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/wing_card"
+    android:layout_width="@dimen/wing_card_width"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/gutter_tiny"
+    android:layout_marginTop="@dimen/gutter_tiny"
+    android:layout_marginEnd="@dimen/gutter_tiny"
+    android:layout_marginBottom="@dimen/gutter_tiny"
+    android:minHeight="@dimen/touch_target"
+    app:cardBackgroundColor="#FFFDF5E2"
+    app:cardCornerRadius="@dimen/corner_medium"
+    app:cardElevation="@dimen/elevation_card"
+    app:strokeColor="@color/hairline_leaf"
+    app:strokeWidth="@dimen/stroke_hairline">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/gutter_small">
+
+        <ImageView
+            android:id="@+id/wing_sprite"
+            android:layout_width="@dimen/wing_sprite"
+            android:layout_height="@dimen/wing_sprite"
+            android:importantForAccessibility="no"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sprite_tile_orange" />
+
+        <TextView
+            android:id="@+id/wing_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gutter_tiny"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="@string/stat_placeholder_label"
+            android:textAppearance="@style/TextAppearance.App.Title"
+            android:textSize="@dimen/text_body_small"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/wing_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/wing_state_locked"
+            android:textAppearance="@style/TextAppearance.App.Label"
+            android:textSize="@dimen/text_label" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

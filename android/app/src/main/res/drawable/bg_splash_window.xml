@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="270"
+                android:startColor="@color/conservatory_moss"
+                android:centerColor="@color/conservatory_night"
+                android:endColor="@color/conservatory_night"
+                android:type="linear" />
+        </shape>
+    </item>
+    <item
+        android:drawable="@drawable/ic_crown_mark"
+        android:gravity="center"
+        android:width="140dp"
+        android:height="140dp" />
+    <item
+        android:gravity="center_horizontal|bottom"
+        android:bottom="180dp"
+        android:width="@dimen/divider_width"
+        android:height="@dimen/divider_height"
+        android:drawable="@drawable/divider_gold" />
+</layer-list>

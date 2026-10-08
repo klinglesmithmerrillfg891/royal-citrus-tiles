@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.RoyalCitrusTiles" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/citrus_orange</item>
+        <item name="colorOnPrimary">@color/citrus_cream</item>
+        <item name="colorPrimaryContainer">@color/citrus_orange_light</item>
+        <item name="colorOnPrimaryContainer">@color/text_bark</item>
+        <item name="colorSecondary">@color/leaf_green</item>
+        <item name="colorOnSecondary">@color/citrus_cream</item>
+        <item name="colorTertiary">@color/royal_gold</item>
+        <item name="colorOnTertiary">@color/text_bark</item>
+        <item name="colorSurface">@color/surface_paper</item>
+        <item name="colorOnSurface">@color/text_bark</item>
+        <item name="colorSurfaceVariant">@color/surface_sunk</item>
+        <item name="colorOnSurfaceVariant">@color/text_sage</item>
+        <item name="colorOutline">@color/royal_gold</item>
+        <item name="colorError">@color/seville_red</item>
+        <item name="android:colorBackground">@color/citrus_cream</item>
+        <item name="android:windowBackground">@drawable/bg_splash_window</item>
+        <item name="android:statusBarColor">@color/surface_sunk</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/citrus_cream</item>
+        <item name="android:textColorPrimary">@color/text_bark</item>
+        <item name="android:textColorSecondary">@color/text_sage</item>
+        <item name="materialButtonStyle">@style/Widget.App.Button.Primary</item>
+    </style>
+
+    <style name="Theme.RoyalCitrusTiles.Dialog" parent="Theme.Material3.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.55</item>
+        <item name="colorPrimary">@color/citrus_orange</item>
+        <item name="colorSecondary">@color/leaf_green</item>
+        <item name="colorSurface">@color/surface_paper</item>
+        <item name="colorOnSurface">@color/text_bark</item>
+    </style>
+</resources>

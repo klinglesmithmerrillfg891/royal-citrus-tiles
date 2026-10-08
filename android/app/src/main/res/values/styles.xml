@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppearance.App.Display" parent="TextAppearance.Material3.DisplaySmall">
+        <item name="android:textSize">@dimen/text_display</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:letterSpacing">0.10</item>
+        <item name="android:textColor">@color/text_parchment</item>
+    </style>
+
+    <style name="TextAppearance.App.Result" parent="TextAppearance.App.Display">
+        <item name="android:textSize">@dimen/text_result</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:textColor">@color/text_bark</item>
+    </style>
+
+    <style name="TextAppearance.App.Headline" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="android:textSize">@dimen/text_headline</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:textColor">@color/text_bark</item>
+    </style>
+
+    <style name="TextAppearance.App.Title" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textSize">@dimen/text_title</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/text_bark</item>
+    </style>
+
+    <style name="TextAppearance.App.Body" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textSize">@dimen/text_body</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/text_sage</item>
+    </style>
+
+    <style name="TextAppearance.App.Numeric" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textSize">@dimen/text_numeric</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:fontFeatureSettings">tnum</item>
+        <item name="android:textColor">@color/text_bark</item>
+    </style>
+
+    <style name="TextAppearance.App.Label" parent="TextAppearance.Material3.LabelSmall">
+        <item name="android:textSize">@dimen/text_label</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">0.20</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/text_sage</item>
+    </style>
+
+    <style name="Widget.App.Button.Primary" parent="Widget.Material3.Button">
+        <item name="android:background">@drawable/btn_primary_citrus</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:minHeight">@dimen/button_height_primary</item>
+        <item name="android:textSize">@dimen/text_cta_small</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.12</item>
+        <item name="android:textColor">@color/citrus_cream</item>
+        <item name="iconTint">@color/citrus_cream</item>
+        <item name="iconSize">@dimen/icon_size</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">@dimen/icon_padding</item>
+        <item name="android:stateListAnimator">@animator/press_scale</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="Widget.App.Button.Cta" parent="Widget.App.Button.Primary">
+        <item name="android:textSize">@dimen/text_cta</item>
+        <item name="android:letterSpacing">0.14</item>
+        <item name="android:minHeight">@dimen/play_tile_height</item>
+    </style>
+
+    <style name="Widget.App.Button.Secondary" parent="Widget.Material3.Button.TextButton">
+        <item name="android:background">@drawable/btn_secondary_outline</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:minHeight">@dimen/button_height_secondary</item>
+        <item name="android:textSize">@dimen/text_title</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.10</item>
+        <item name="android:textColor">@color/leaf_green_dark</item>
+        <item name="iconTint">@color/leaf_green_dark</item>
+        <item name="iconSize">@dimen/icon_size</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">@dimen/icon_padding</item>
+        <item name="android:stateListAnimator">@animator/press_scale</item>
+    </style>
+
+    <style name="Widget.App.Button.Danger" parent="Widget.App.Button.Secondary">
+        <item name="android:background">@drawable/btn_danger_outline</item>
+        <item name="android:textColor">@color/seville_red</item>
+    </style>
+
+    <style name="Widget.App.Button.Icon" parent="Widget.Material3.Button.IconButton">
+        <item name="android:background">@drawable/btn_icon_round</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:layout_width">@dimen/touch_target</item>
+        <item name="android:layout_height">@dimen/touch_target</item>
+        <item name="android:minWidth">@dimen/touch_target</item>
+        <item name="android:minHeight">@dimen/touch_target</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="iconTint">@color/text_bark</item>
+        <item name="iconSize">@dimen/icon_size</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">0dp</item>
+    </style>
+
+    <style name="Widget.App.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">@dimen/corner_large</item>
+        <item name="cardBackgroundColor">@color/surface_paper</item>
+        <item name="cardElevation">@dimen/elevation_card</item>
+        <item name="strokeWidth">@dimen/stroke_hairline</item>
+        <item name="strokeColor">@color/hairline_gold</item>
+    </style>
+
+    <style name="Widget.App.Card.Sunk" parent="Widget.App.Card">
+        <item name="cardBackgroundColor">@color/surface_sunk</item>
+        <item name="cardCornerRadius">@dimen/corner_medium</item>
+    </style>
+
+    <style name="Widget.App.Divider.Gold" parent="">
+        <item name="android:layout_width">@dimen/divider_width</item>
+        <item name="android:layout_height">@dimen/divider_height</item>
+        <item name="android:background">@drawable/divider_gold</item>
+        <item name="android:importantForAccessibility">no</item>
+    </style>
+</resources>

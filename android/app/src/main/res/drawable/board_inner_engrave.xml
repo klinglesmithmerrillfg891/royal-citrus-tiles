@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/corner_small" />
+            <gradient
+                android:angle="270"
+                android:startColor="#FFF4E4C2"
+                android:endColor="#FFEFDFB6"
+                android:type="linear" />
+            <stroke
+                android:width="@dimen/stroke_hairline"
+                android:color="@color/hairline_bark" />
+        </shape>
+    </item>
+</layer-list>

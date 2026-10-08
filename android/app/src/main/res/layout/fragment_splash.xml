@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/conservatory_night">
+
+    <ImageView
+        android:id="@+id/splash_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_splash"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/splash_scrim"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/scrim_splash"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/splash_sprig_start"
+        android:layout_width="@dimen/splash_sprig"
+        android:layout_height="@dimen/splash_sprig"
+        android:alpha="0.45"
+        android:importantForAccessibility="no"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_leaf_sprig"
+        app:layout_constraintBottom_toBottomOf="@id/splash_medallion"
+        app:layout_constraintEnd_toStartOf="@id/splash_medallion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/splash_medallion" />
+
+    <ImageView
+        android:id="@+id/splash_sprig_end"
+        android:layout_width="@dimen/splash_sprig"
+        android:layout_height="@dimen/splash_sprig"
+        android:alpha="0.45"
+        android:importantForAccessibility="no"
+        android:scaleType="fitCenter"
+        android:scaleX="-1"
+        android:src="@drawable/ic_leaf_sprig"
+        app:layout_constraintBottom_toBottomOf="@id/splash_medallion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/splash_medallion"
+        app:layout_constraintTop_toTopOf="@id/splash_medallion" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/splash_medallion"
+        android:layout_width="@dimen/splash_medallion"
+        android:layout_height="@dimen/splash_medallion"
+        app:cardBackgroundColor="@color/surface_night"
+        app:cardCornerRadius="@dimen/splash_medallion_radius"
+        app:cardElevation="@dimen/elevation_panel"
+        app:layout_constraintBottom_toTopOf="@id/splash_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.40"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:strokeColor="@color/royal_gold"
+        app:strokeWidth="@dimen/stroke_frame">
+
+        <ImageView
+            android:id="@+id/splash_medallion_sprite"
+            android:layout_width="@dimen/splash_sprite"
+            android:layout_height="@dimen/splash_sprite"
+            android:layout_gravity="center"
+            android:contentDescription="@string/desc_splash_medallion"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sprite_tile_orange" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/splash_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dialog_margin"
+        android:layout_marginTop="@dimen/dialog_margin"
+        android:layout_marginEnd="@dimen/dialog_margin"
+        android:gravity="center"
+        android:maxLines="2"
+        android:shadowColor="#80000000"
+        android:shadowDy="3"
+        android:shadowRadius="6"
+        android:text="@string/splash_title"
+        android:textAppearance="@style/TextAppearance.App.Display"
+        app:layout_constraintBottom_toTopOf="@id/splash_divider_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/splash_medallion" />
+
+    <View
+        android:id="@+id/splash_divider_top"
+        style="@style/Widget.App.Divider.Gold"
+        android:layout_width="@dimen/divider_width"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginTop="@dimen/screen_margin"
+        app:layout_constraintBottom_toTopOf="@id/splash_tagline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/splash_title" />
+
+    <TextView
+        android:id="@+id/splash_tagline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dialog_margin"
+        android:layout_marginTop="@dimen/gutter"
+        android:layout_marginEnd="@dimen/dialog_margin"
+        android:gravity="center"
+        android:letterSpacing="0.22"
+        android:text="@string/splash_tagline"
+        android:textAppearance="@style/TextAppearance.App.Label"
+        android:textColor="@color/royal_gold"
+        android:textSize="@dimen/text_caption"
+        app:layout_constraintBottom_toTopOf="@id/splash_divider_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/splash_divider_top" />
+
+    <View
+        android:id="@+id/splash_divider_bottom"
+        style="@style/Widget.App.Divider.Gold"
+        android:layout_width="@dimen/divider_width"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginTop="@dimen/gutter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/splash_tagline" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/splash_progress"
+        android:layout_width="@dimen/splash_progress_width"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:indeterminate="true"
+        app:indicatorColor="@color/royal_gold"
+        app:layout_constraintBottom_toTopOf="@id/splash_caption"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:trackColor="@color/track_parchment"
+        app:trackCornerRadius="2dp"
+        app:trackThickness="@dimen/progress_thickness" />
+
+    <TextView
+        android:id="@+id/splash_caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dialog_margin"
+        android:letterSpacing="0.30"
+        android:text="@string/splash_loading"
+        android:textAppearance="@style/TextAppearance.App.Label"
+        android:textColor="@color/text_lichen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
